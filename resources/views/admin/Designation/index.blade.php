@@ -24,9 +24,7 @@
                             <div class="mb-3">
                             <label for="" class="form-label">Designation Name</label>
                             <input type="text" name="name" class="form-control" placeholder="Designation Type">
-                            @if ($errors->has('name'))
-                            <span class="text-white">{{$errors->first('name')}}</span>
-                            @endif
+                            
                         </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Status</label>
@@ -153,7 +151,7 @@
   
           if(confirm("Are you sure you want to remove this Designation?") == true){
                 $.ajax({
-                    url: userURL,
+                    url:userURL,
                     type: 'DELETE',
                     dataType: 'json',
                     success: function(data) {

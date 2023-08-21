@@ -31,13 +31,7 @@ class DesignationController extends Controller
         
 
     }
-    //Edit
-    // public function edit(Designation $designation,$id)
-    // {
-    //     //dd($id);
-    //      $designation=Designation::where('id',$id)->first();
-    //     return view('admin.designation.index',compact('designation'));
-    // }
+   
     public function edit($id)
     {
         $designation=Designation::find($id);

@@ -59,6 +59,20 @@
                   <p>Designation</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/admin/shift/index" class="nav-link">
+                <p>Shift</p></a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/staff/index" class="nav-link">
+                <p>Staff</p></a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/holidays/index" class="nav-link">
+                  <p>Holidays</p>
+                </a>
+              </li>
+              
             </ul>
           </li>
           
