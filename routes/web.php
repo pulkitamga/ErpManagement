@@ -48,6 +48,7 @@ Route::get('/', function () {
 
          //holiday
          Route::get('/holidays/index',[HolidayController::class,'index'])->name('holiday.index');
+         Route::post('/holidays/index',[HolidayController::class,'store'])->name('holiday.store');
    });
 
 
