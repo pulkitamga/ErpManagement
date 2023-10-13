@@ -35,7 +35,7 @@ class StaffController extends Controller
         $staff->last_name=$request->lname;
         $staff->email=$request->email;
         $staff->shift=$request->shift;
-        $staff->designation_id=$request->designation;
+        $staff->designation=$request->designation;
         $staff->salary=$request->salary;
         $staff->status=$request->status;
         $staff->save();

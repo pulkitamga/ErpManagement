@@ -49,6 +49,10 @@ Route::get('/', function () {
          //holiday
          Route::get('/holidays/index',[HolidayController::class,'index'])->name('holiday.index');
          Route::post('/holidays/index',[HolidayController::class,'store'])->name('holiday.store');
+         Route::get('/holidays/edit/{id}',[HolidayController::class,'edit'])->name('holiday.edit');
+         Route::put('/holidays/update',[HolidayController::class,'update'])->name('holiday.update');
+         Route::delete('/holidays/index/{id}',[HolidayController::class,'destroy'])->name('holiday.delete');
+
    });
 
 
